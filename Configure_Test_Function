@@ -1,0 +1,21 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "DialogCodeHook",
+  "userId": "1234567890",
+  "sessionAttributes": {},
+  "bot": {
+    "name": "BookSomething",
+    "alias": "None",
+    "version": "$LATEST"
+  },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "BookSomething",
+    "slots": {
+      "slot1": "None",
+      "slot2": "None"
+    },
+    "confirmationStatus": "None"
+  },
+  "inputTranscript": "I want something"
+}
