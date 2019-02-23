@@ -1,0 +1,15 @@
+Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).
+
+
+Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. No machine learning experience required.
+
+There is a treasure trove of potential sitting in your unstructured data. Customer emails, support tickets, product reviews, social media, even advertising copy represents insights into customer sentiment that can be put to work for your business. The question is how to get at it? As it turns out, Machine learning is particularly good at accurately identifying specific items of interest inside vast swathes of text (such as finding company names in analyst reports), and can learn the sentiment hidden inside language (identifying negative reviews, or positive customer interactions with customer service agents), at almost limitless scale.
+
+AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second. You pay only for the compute time you consume - there is no charge when your code is not running. With AWS Lambda, you can run code for virtually any type of application or backend service - all with zero administration. AWS Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging. 
+
+
+ChatBot Functionality 
+
+AWS Lambda analyses the input transcript field of the Amazon Lex event. Based on the overall sentiment value, it generates a response message with next step instructions. When the sentiment is neutral, positive, or mixed, the response leaves it to Amazon Lex to decide what the next steps should be. It adds to the response overall sentiment value as an additional session attribute, along with slots’ values.
+When the overall sentiment is negative, the function returns the dialog action, pointing to an escalation.
+The function returns a message, or prompt, to be provided to the customer before taking the next step. Based on the returned action, Amazon Connect can select the appropriate next step in a contact flow.
